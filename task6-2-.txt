@@ -1,0 +1,14 @@
+import pandas as pd
+student_data =[{"name" : "alice",'age':20,'grade':'a','marks':85},
+               {'name':'bob','age':22 , 'grade':'b','marks':78},
+               {'name':'charlie','age':19,'grade':'a','marks':92},
+               {'name':'david','age':21,'grade':'c','marks':65},
+               {'name':'eva','age':20,'grade':'b','marks':74}]
+df = pd.DataFrame(student_data, columns=['name','age','grade'])
+print(df)
+
+df = pd.DataFrame(student_data, columns=['name','marks'])
+print(df)
+
+grade_a = df.loc[df['grade']=='a']
+print(grade_a)

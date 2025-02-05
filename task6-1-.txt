@@ -1,0 +1,14 @@
+import numpy as np 
+k=np.array([10,20,30,40,50])
+p=np.array([5,4,3,2,1])
+print(k+p)
+print(k-p)
+print(k*p)
+print(k/p)
+
+print(k.min())
+print(k.max())
+print(k.sum())
+
+reshaped_array = k.reshape(5,1)
+print(reshaped_array)
